@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 1834711041}
   - component: {fileID: 1834711040}
   m_Layer: 0
-  m_Name: ExampleObject
+  m_Name: GlowShader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
