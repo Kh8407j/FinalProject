@@ -8,12 +8,12 @@ namespace audio
     public class Audio : MonoBehaviour
     {
         private Transform followTransform;
-        private AudioSource audio;
+        private AudioSource source;
 
         // Called before 'void Start()'.
         private void Awake()
         {
-            audio = GetComponent<AudioSource>();
+            source = GetComponent<AudioSource>();
         }
 
         // Called on a constant timeline.
@@ -24,7 +24,7 @@ namespace audio
                 transform.position = followTransform.position;
 
             // Once the audio for this game object stops playing, it'll be destroyed.
-            if (!audio.isPlaying)
+            if (!source.isPlaying)
                 Destroy(gameObject);
         }
 

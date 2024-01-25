@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6155561987475506855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8169867593549410372}
+  - component: {fileID: 7906883076334518893}
+  m_Layer: 0
+  m_Name: _AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8169867593549410372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6155561987475506855}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7906883076334518893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6155561987475506855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f425114b99c4240af55e3e91f1f8d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundObject: {fileID: 1085466231198045868, guid: bef26aec9b1977e49ab496f230e1423c,
+    type: 3}
+  sounds:
+  - name: Fire
+    audioClips:
+    - {fileID: 8300000, guid: c6f5b4d63280f9f45b37c5b8dc1f2a84, type: 3}
+    - {fileID: 8300000, guid: cd41f30cce0aefd428629b108ad4036c, type: 3}
+    - {fileID: 8300000, guid: efe91d38e11e3f74089b3883aaa70234, type: 3}
+    - {fileID: 8300000, guid: fea9bb736ce0cfd4997be981a5efd01f, type: 3}
+    - {fileID: 8300000, guid: a6bea8732eaeff2469841eab3427b9d3, type: 3}
+    - {fileID: 8300000, guid: 418f58fc005176143973f4d06a60e991, type: 3}

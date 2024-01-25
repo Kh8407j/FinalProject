@@ -17,6 +17,12 @@ namespace controllers
         // Output scripts.
         Motor motor;
 
+        // Called before 'void Start()'.
+        private void Awake()
+        {
+            motor = GetComponent<Motor>();
+        }
+
         // Start is called before the first frame update
         void Start()
         {
@@ -29,18 +35,27 @@ namespace controllers
 
         }
 
+        // Called upon a constant timeline.
+        private void FixedUpdate()
+        {
+            CalculateInput();
+            UpdateMotor();
+        }
+
         // Check to see if the player is giving in any device input.
         void CalculateInput()
         {
-            hor = Input.GetAxis("Horizontal");
-            ver = Input.GetAxis("Vertical");
+            hor = Input.GetAxisRaw("Horizontal");
+            ver = Input.GetAxisRaw("Vertical");
             fire = Input.GetButton("Fire1");
         }
 
         // Output values of this script for the motor to read.
         void UpdateMotor()
         {
-
+            motor.Hor = hor;
+            motor.Ver = ver;
+            motor.HoldingFire = fire;
         }
     }
 }

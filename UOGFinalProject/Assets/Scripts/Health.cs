@@ -9,7 +9,7 @@ namespace entity
 {
     public class Health : MonoBehaviour
     {
-        [SerializeField] float health = 100f;
+        private float health = 100f;
         [SerializeField] float maxHealth = 100f;
 
         private bool dead;
@@ -26,16 +26,14 @@ namespace entity
             // Check that health went down or up.
             if (prevHealth > health)
             {
-                // Play the hurt sound.
-                NextSoundAttributes soundAttributes = new NextSoundAttributes();
-                AudioManager.control.PlayAudio("Hurt", soundAttributes);
+                
             }
             else
             {
 
             }
 
-            // Check that the health change has caused the health value to go over the maximum/minimum it's allowed up/down to.
+            // Prevent health going over maximum/minimum.
             if (health > maxHealth)
                 health = maxHealth;
             else if (health < 0f)
