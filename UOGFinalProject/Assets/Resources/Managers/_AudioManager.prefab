@@ -55,3 +55,22 @@ MonoBehaviour:
     - {fileID: 8300000, guid: fea9bb736ce0cfd4997be981a5efd01f, type: 3}
     - {fileID: 8300000, guid: a6bea8732eaeff2469841eab3427b9d3, type: 3}
     - {fileID: 8300000, guid: 418f58fc005176143973f4d06a60e991, type: 3}
+  - name: Place Bomb
+    audioClips:
+    - {fileID: 8300000, guid: b3dea49875e066b4ea15a27423f0d202, type: 3}
+  - name: Damage
+    audioClips:
+    - {fileID: 8300000, guid: 6048d6ed6ea2eae4e8ee87d05add5fb4, type: 3}
+    - {fileID: 8300000, guid: 606413400a50ab54ea7e1f83bbe52a89, type: 3}
+    - {fileID: 8300000, guid: 4f6a0741be899584b9f261596ffbcdb0, type: 3}
+    - {fileID: 8300000, guid: ede83d20925cd074b83586e1096397e2, type: 3}
+    - {fileID: 8300000, guid: 67358d2c46771774f818b261028868ca, type: 3}
+    - {fileID: 8300000, guid: 2ce85bda88c7329499baf0659e137f2a, type: 3}
+  - name: Explosion
+    audioClips:
+    - {fileID: 8300000, guid: 868021488c6f43844bcc260423f9291a, type: 3}
+    - {fileID: 8300000, guid: ee0b66c4fb272ba4fa9e6ebba4e76306, type: 3}
+    - {fileID: 8300000, guid: c9a3b51679087134c810d9fe1ebc3126, type: 3}
+    - {fileID: 8300000, guid: 178d9a9aa07c96d4aa726a7d02939cbf, type: 3}
+    - {fileID: 8300000, guid: c0c3bd40a0785824891b11d2f29208ec, type: 3}
+    - {fileID: 8300000, guid: 77c799b3902e26649995846e409c45fd, type: 3}

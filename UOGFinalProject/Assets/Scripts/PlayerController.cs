@@ -13,26 +13,15 @@ namespace controllers
 
         // Button values.
         private bool fire;
+        private bool altFire;
 
-        // Output scripts.
-        Motor motor;
+        // References.
+        private Motor motor;
 
         // Called before 'void Start()'.
         private void Awake()
         {
             motor = GetComponent<Motor>();
-        }
-
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
         }
 
         // Called upon a constant timeline.
@@ -48,6 +37,7 @@ namespace controllers
             hor = Input.GetAxisRaw("Horizontal");
             ver = Input.GetAxisRaw("Vertical");
             fire = Input.GetButton("Fire1");
+            altFire = Input.GetButton("Fire2");
         }
 
         // Output values of this script for the motor to read.
@@ -56,6 +46,7 @@ namespace controllers
             motor.Hor = hor;
             motor.Ver = ver;
             motor.HoldingFire = fire;
+            motor.HoldingAltFire = altFire;
         }
     }
 }

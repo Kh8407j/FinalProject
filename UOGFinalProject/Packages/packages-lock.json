@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.csound.csoundunity": {
+      "version": "file:C:/Users/Semfh/Downloads/CsoundUnity-master/CsoundUnity-master",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.burst": {
       "version": "1.8.7",
       "depth": 1,

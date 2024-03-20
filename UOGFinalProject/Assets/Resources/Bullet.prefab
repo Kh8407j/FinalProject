@@ -120,8 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa219edaace60e4bb300abddc89210d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 25
   lifeTime: 5
+  damage: 15
+  explosionSettings:
+    explodeOnImpact: 0
+    explosionBlueprint: {fileID: 0}
 --- !u!114 &125097996794007790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +139,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  playSoundOnDamage: 
+  scoreIncreaseOnDamage: 0
+  scoreIncreaseOnKill: 0
 --- !u!54 &3268137876598551440
 Rigidbody:
   m_ObjectHideFlags: 0

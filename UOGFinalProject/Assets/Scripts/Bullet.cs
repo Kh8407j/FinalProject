@@ -9,6 +9,25 @@ namespace entity
     {
         [SerializeField] float moveSpeed = 10f;
         [SerializeField] float lifeTime = 5f;
+        [SerializeField] float damage = 15f;
+
+        [System.Serializable]
+        public class ExplosionSettings
+        {
+            [SerializeField] bool explodeOnImpact;
+            [SerializeField] GameObject explosionBlueprint;
+
+            public bool GetExplosionOnImpact()
+            {
+                return explodeOnImpact;
+            }
+
+            public GameObject GetExplosionBlueprint()
+            {
+                return explosionBlueprint;
+            }
+        }
+        [SerializeField] ExplosionSettings explosionSettings = new ExplosionSettings();
 
         private Rigidbody rb;
         private Health health;
@@ -26,18 +45,28 @@ namespace entity
             Invoke("DestroyBullet", lifeTime);
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
         // Called when entering a trigger collider.
         private void OnTriggerEnter(Collider other)
         {
             // Check that the bullet collided into a barrier.
             if (other.gameObject.CompareTag("Barrier"))
                 health.Kill();
+
+            // Check that the bullet hit something damageable.
+            Health trigHealth = other.gameObject.GetComponent<Health>();
+            if (trigHealth != null)
+            {
+                if(explosionSettings.GetExplosionOnImpact())
+                {
+                    // Instantiate the explosion where the projectile was.
+                    GameObject blueprint = explosionSettings.GetExplosionBlueprint();
+                    Vector3 pos = transform.position;
+                    GameObject explosion = Instantiate(blueprint, pos, Quaternion.identity);
+                }
+
+                trigHealth.ChangeHealth(-damage);
+                health.Kill();
+            }
         }
 
         // Called on a constant timeline.
