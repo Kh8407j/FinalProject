@@ -1,0 +1,16 @@
+Prechtl, A., Laney, R., Willis, A. and Samuels, R. (2014). Methodological approaches to the evaluation of game music systems. doi:https://doi.org/10.1145/2636879.2636906.
+(Cite: Questions based on this paper)
+
+
+
+1. Does the game lead to a more enjoyable playing experience? (Likert 1 - 5) (Cite)
+
+2. Was there any points in time when the game's music seemed off-putting? (Likert 1 - 5)
+
+3. Do you feel the music affects you the intended way (immersion) during game play? (Likert 1 - 5) (Cite)
+
+4. Does the music sound aesthetically reasonable or stylistically plausible? (Likert 1 - 5) (Cite)
+
+5. Does the music convey the intended narrative? (Likert 1 - 5) (Cite)
+
+6. Do you have any final comments?
